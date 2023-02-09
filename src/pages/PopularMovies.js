@@ -7,7 +7,7 @@ const PopularMovies = () => {
   const [movies, setMovies] = useState([])
   useEffect(() => {
     async function getMovies() {
-      const response = await fetch(baseUrl + "now_playing?api_key=3341385410c37095575e1b97197378ce");
+      const response = await fetch(baseUrl + "popular?api_key=3341385410c37095575e1b97197378ce");
       const data = await response.json();
       setMovies(data.results);
       console.log(data.results);
