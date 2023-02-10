@@ -1,8 +1,11 @@
 import { Container, Card, CardBody, CardSubtitle, Button, CardTitle, CardText, Row, Col } from "reactstrap";
 import { imageUrl } from "../../data/baseUrl";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const PopularCards = ({ movies }) => {
   const truncate =(str) => str.length > 150 ? str.substring(0, 147) + "..." : str;
+  const navigate = useNavigate()
   return (
     <Container>
     <h2 className="display-5 my-5 text-center">Learn More</h2>
@@ -30,9 +33,9 @@ const PopularCards = ({ movies }) => {
                   <CardText>
                     {truncate(movie.overview)}
                   </CardText>
-                  <Button style={{backgroundColor:'var(--dark)'}}>
+                  <Button style={{backgroundColor:'var(--dark)'}} onClick={()=> navigate(`movies/${movie.id}`)}>
                     View Details
-                  </Button>
+                  </Button>                  
                 </CardBody>
               </Card>
             </Col>
