@@ -4,7 +4,7 @@ import PopularMovies from './pages/PopularMovies';
 import NowPlayingMovies from './pages/NowPlayingMovies';
 import TopRatedMovies from './pages/TopRatedMovies';
 import UpcomingMovies from './pages/UpcomingMovies';
-import MovieDetails from './pages/MovieDetails';
+import MovieDetails from './components/popular/MovieDetails';
 import Home from './pages/Home';
 
 function App() {
