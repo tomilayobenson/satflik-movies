@@ -26,14 +26,14 @@ const ContentCard = ({ movieDetails: details }) => {
                     <strong>Adult Movie?:</strong> {details.adult ? "Yes" : "No"}
                 </ListGroupItem>
                 <ListGroupItem>
-                    <strong>Runtime:</strong> {details.runtime}
+                    <strong>Runtime:</strong> {details.runtime}mins
                 </ListGroupItem>
                 <ListGroupItem>
                     <strong>Budget:</strong> ${details.budget}
                 </ListGroupItem>
             </ListGroup>
             <CardBody>
-                <CardLink href={details.homepage}>
+                <CardLink href={details.homepage} target="_blank">
                     Get Tickets
                 </CardLink>
             </CardBody>

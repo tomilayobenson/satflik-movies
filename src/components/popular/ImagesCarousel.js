@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import {
     Container,
     Carousel,
     CarouselItem,
-    CarouselControl,
-    CarouselIndicators
+    CarouselControl
 } from 'reactstrap';
 import ImagesRow from './ImagesRow';
 

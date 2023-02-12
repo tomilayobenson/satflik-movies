@@ -33,6 +33,7 @@ const MovieDetails = () => {
   useEffect(() => {
     async function getImages() {
       const response = await fetch(baseUrl + movieId + "/images?api_key=3341385410c37095575e1b97197378ce");
+      if (!response.ok) throw Error(response.message);
       const data = await response.json();
       setMovieImages(listedImages(data.backdrops));      
     }
@@ -42,6 +43,7 @@ const MovieDetails = () => {
   useEffect(() => {
     async function getDetails() {
       const response = await fetch(baseUrl + movieId + "?api_key=3341385410c37095575e1b97197378ce");
+      if (!response.ok) throw Error(response.message);
       const data = await response.json();
       setDetails(data);      
     }
@@ -51,6 +53,7 @@ const MovieDetails = () => {
   useEffect(() => {
     async function getReviews() {
       const response = await fetch(baseUrl + movieId + "/reviews?api_key=3341385410c37095575e1b97197378ce");
+      if (!response.ok) throw Error(response.message);
       const data = await response.json();
       console.log('reviews', data)
       setReviews(data.results);      
