@@ -31,6 +31,18 @@ const ContentCard = ({ movieDetails: details }) => {
                 <ListGroupItem>
                     <strong>Budget:</strong> ${details.budget}
                 </ListGroupItem>
+                <ListGroupItem className="d-flex">
+                    <strong>Genres:</strong>
+                    <ul className="list-unstyled mx-2">
+                    {
+                        (details.genres) &&
+                        (details.genres.map((genre, idx) => 
+                            <li key={idx}>{genre.name}</li>
+                        ))
+                    }
+                    </ul>                    
+
+                </ListGroupItem>
             </ListGroup>
             <CardBody>
                 <CardLink href={details.homepage} target="_blank">

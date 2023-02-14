@@ -7,15 +7,11 @@ const PopularCards = ({ movies }) => {
   const truncate =(str) => str.length > 150 ? str.substring(0, 147) + "..." : str;
   const navigate = useNavigate()
   return (
-    <Container>
-    <h2 className="display-5 my-5 text-center">Learn More</h2>
-      <Row className="mb-5">
+     <Row className="mb-5">
         {movies.map((movie) => {
           return (
-            <Col xs={12} md={4} className="mb-5">
-              <Card
-                key={movie.id}
-              >
+            <Col xs={12} md={4} className="mb-5" key={movie.id}>
+              <Card>
                 <img
                   alt={movie.title}
                   src={imageUrl + movie.backdrop_path}
@@ -44,7 +40,6 @@ const PopularCards = ({ movies }) => {
         })}
 
       </Row>
-    </Container>
   )
 }
 
