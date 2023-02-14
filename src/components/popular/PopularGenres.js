@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Input, FormGroup, Label } from "reactstrap"
-import { baseUrl } from "../../data/baseUrl"
+
 
 const PopularGenres = ({ movies, allGenres, setCategorizedMovies }) => {
     const [genres, setGenres] = useState([]);

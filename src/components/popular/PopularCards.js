@@ -1,4 +1,4 @@
-import { Container, Card, CardBody, CardSubtitle, Button, CardTitle, CardText, Row, Col } from "reactstrap";
+import { Card, CardBody, CardSubtitle, Button, CardTitle, CardText, Row, Col } from "reactstrap";
 import { imageUrl } from "../../data/baseUrl";
 import { useNavigate } from "react-router";
 
