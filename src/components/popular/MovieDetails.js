@@ -26,7 +26,6 @@ const MovieDetails = () => {
         const imagePart = images.splice(0, 3);
         dividedImages.push(imagePart);
     }
-    console.log(dividedImages)
     return dividedImages;
 }
 
@@ -55,7 +54,6 @@ const MovieDetails = () => {
       const response = await fetch(baseUrl + movieId + "/reviews?api_key=3341385410c37095575e1b97197378ce");
       if (!response.ok) throw Error(response.message);
       const data = await response.json();
-      console.log('reviews', data)
       setReviews(data.results);      
     }
     getReviews();

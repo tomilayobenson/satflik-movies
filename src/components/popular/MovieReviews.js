@@ -1,4 +1,4 @@
-import { Card, CardText, CardTitle, CardBody, CardImg, CardSubtitle, Media, Container } from "reactstrap";
+import { Card, CardBody } from "reactstrap";
 import { imageUrl } from "../../data/baseUrl";
 
 const MovieReviews = ({ movieReviews: reviews }) => {
@@ -8,9 +8,9 @@ const MovieReviews = ({ movieReviews: reviews }) => {
             <div className="mx-3">
                 <h5 className="my-3">Movie Reviews</h5>
                 {
-                    reviews.map((review) => {
+                    reviews.map((review, idx) => {
                         return (
-                            <Card className="rounded-bottom m-1 p-4">
+                            <Card className="rounded-bottom m-1 p-4" key={idx}>
                                 <CardBody>
                                     <i className="fa fa-quote-left fa-1x d-block text-info" aria-hidden="true"></i>
                                     <p className="card-text text-justify pt-3">{truncate(review.content)}</p>
@@ -28,7 +28,7 @@ const MovieReviews = ({ movieReviews: reviews }) => {
                                     </ul>
                                 </CardBody>
                                 <hr />
-                                <div class='d-flex'>
+                                <div className='d-flex'>
                                     <img
                                         src={review.author_details.avatar_path ? (imageUrl + review.author_details.avatar_path) : "https://images.pexels.com/photos/7129713/pexels-photo-7129713.jpeg"}
                                         style={{ verticalAlign: 'middle', width: '50px', height: '50px', borderRadius: '50%' }}
@@ -37,7 +37,7 @@ const MovieReviews = ({ movieReviews: reviews }) => {
                                         height="auto"
                                         alt={review.author}
                                     />
-                                    <div class="media-body mx-4">
+                                    <div className="media-body mx-4">
                                         <h5 className="font-weight-bold">{review.author}</h5>
                                         <p>{review.created_at || "3 mins ago"}</p>
                                     </div>
