@@ -38,11 +38,11 @@ const PopularMovies = () => {
       <Container>
         <h2 className="display-5 my-5 text-center">Learn More</h2>
         <Row>
-          <Col sm={3}>
+          <Col sm={2}>
             <PopularGenres movies={movies} allGenres={allGenres} setCategorizedMovies={setCategorizedMovies} />
           </Col>
           <Col>
-            <PopularCards movies={categorizedMovies.length ? categorizedMovies : movies} sm={9} />
+            <PopularCards movies={categorizedMovies.length ? categorizedMovies : movies} sm={10} />
           </Col>
         </Row>
       </Container>

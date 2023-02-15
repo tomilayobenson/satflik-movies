@@ -6,21 +6,26 @@ import TopRatedMovies from './pages/TopRatedMovies';
 import UpcomingMovies from './pages/UpcomingMovies';
 import MovieDetails from './components/popular/MovieDetails';
 import Home from './pages/Home';
+import Header from './components/popular/Header';
 
 function App() {
   return (
-    <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='popular' element={<PopularMovies />} />
-                <Route path='top-rated' element={<TopRatedMovies />} />
-                <Route path='now-playing' element={<NowPlayingMovies />}/>
-                <Route path='upcoming' element={<UpcomingMovies />}/>
-                <Route
-                    path='movies/:movieId'
-                    element={<MovieDetails />}
-                />
-            </Routes>
-    
+    <>
+      <Header />
+      <Routes>
+        <Route path='/' element={<PopularMovies />} />
+        <Route path='popular' element={<PopularMovies />} />
+        <Route path='top-rated' element={<TopRatedMovies />} />
+        <Route path='now-playing' element={<NowPlayingMovies />} />
+        <Route path='upcoming' element={<UpcomingMovies />} />
+        <Route
+          path='movies/:movieId'
+          element={<MovieDetails />}
+        />
+      </Routes>
+    </>
+
+
   );
 }
 
