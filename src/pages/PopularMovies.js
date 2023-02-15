@@ -35,9 +35,9 @@ const PopularMovies = () => {
   return (
     <>
       <PopularBanner movies={movies} />
-      <Container>
-        <h2 className="display-5 my-5 text-center">Learn More</h2>
-        <Row>
+      <Container >
+        <h2 className="display-5 mt-5 text-center d-none d-md-block">Learn More</h2>
+        <Row className='mt-5'>
           <Col sm={2}>
             <PopularGenres movies={movies} allGenres={allGenres} setCategorizedMovies={setCategorizedMovies} />
           </Col>
