@@ -35,6 +35,12 @@
 .App-link {
   color: #61dafb;
 }
+a.nav-link {
+  color:#fefae08c
+}
+a.nav-link.active{
+  color:#fefae0 !important
+}
 
 @keyframes App-logo-spin {
   from {

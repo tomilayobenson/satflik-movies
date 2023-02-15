@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 
 
 const PopularCards = ({ movies }) => {
-  const truncate =(str) => str.length > 150 ? str.substring(0, 147) + "..." : str;
+  const truncate =(str) => str.length > 140 ? str.substring(0, 137) + "..." : str;
   const navigate = useNavigate()
   return (
      <Row className="mb-5">
