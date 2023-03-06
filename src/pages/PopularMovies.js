@@ -16,7 +16,6 @@ const PopularMovies = () => {
       const data = await response.json();
       setMovies(data.results);
       console.log(data.results);
-
     }
     getMovies();
   }, []);
@@ -27,7 +26,6 @@ const PopularMovies = () => {
       const data = await response.json();
       setAllGenres(data.genres);
       // console.log("all genres",data.genres);
-
     }
     getGenres();
   }, []);

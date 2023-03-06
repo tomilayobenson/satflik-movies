@@ -1,3 +1,8 @@
+Here are images if this project:
+[Website Homepage](./src/images/homepage.jpeg)
+
+[Movie Details Page](./src/images/movieDetailsPage.jpeg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
