@@ -1,5 +1,5 @@
 Here are images if this project:
-[Website Homepage](./src/images/homepage.jpeg)
+![Website Homepage](https://raw.githubusercontent.com/tomilayobenson/satflik-movies/src/images/movieDetailsPage.jpeg)
 
 [Movie Details Page](./src/images/movieDetailsPage.jpeg)
 
