@@ -1,7 +1,11 @@
-Here are images if this project:
-![Website Homepage](https://raw.githubusercontent.com/tomilayobenson/satflik-movies/src/images/movieDetailsPage.jpeg)
+Here are images of this project:
 
-[Movie Details Page](./src/images/movieDetailsPage.jpeg)
+Home page
+![Website Homepage](https://raw.githubusercontent.com/tomilayobenson/satflik-movies/main/src/images/homepage.jpeg)
+
+
+Movie Details page
+![Movie Details Page](https://raw.githubusercontent.com/tomilayobenson/satflik-movies/main/src/images/movieDetailsPage.jpeg)
 
 # Getting Started with Create React App
 
