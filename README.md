@@ -1,11 +1,11 @@
-Here are images if this project:
-[Website Homepage](./src/images/homepage.jpeg)
+Here are images of this project:
 
-[Movie Details Page](./src/images/movieDetailsPage.jpeg)
+Home page
+![Website Homepage](https://raw.githubusercontent.com/tomilayobenson/satflik-movies/main/src/images/homepage.jpeg)
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Details page
+![Movie Details Page](https://raw.githubusercontent.com/tomilayobenson/satflik-movies/main/src/images/movieDetailsPage.jpeg)
 
 ## Available Scripts
 
