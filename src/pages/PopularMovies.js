@@ -4,6 +4,7 @@ import PopularBanner from "../components/popular/PopularBanner";
 import PopularCards from "../components/popular/PopularCards";
 import PopularGenres from "../components/popular/PopularGenres";
 import { baseUrl } from "../data/baseUrl";
+import Header from "../components/popular/Header";
 
 const PopularMovies = () => {
   const [movies, setMovies] = useState([])
@@ -31,7 +32,8 @@ const PopularMovies = () => {
   }, []);
 
   return (
-    <>
+        <>
+        <Header />
       <PopularBanner movies={movies} />
       <Container >
         <h2 className="display-5 mt-5 text-center d-none d-md-block">Learn More</h2>

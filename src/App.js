@@ -6,12 +6,12 @@ import TopRatedMovies from './pages/TopRatedMovies';
 import UpcomingMovies from './pages/UpcomingMovies';
 import MovieDetails from './components/popular/MovieDetails';
 import Home from './pages/Home';
-import Header from './components/popular/Header';
+
 
 function App() {
   return (
     <>
-      <Header />
+      
       <Routes>
         <Route path='/' element={<PopularMovies />} />
         <Route path='popular' element={<PopularMovies />} />

@@ -1,8 +1,17 @@
 import React from 'react'
+import { useState, useEffect } from "react";
+import Header from "../components/popular/Header";
+import UpcomingBanner from '../components/upcoming/UpcomingBanner';
 
 const UpcomingMovies = () => {
+
   return (
-    <div>UpcomingMovies</div>
+    <>
+      <Header />
+      <UpcomingBanner />
+      <div>UpcomingMovies</div>
+
+    </>
   )
 }
 
