@@ -14,7 +14,7 @@ const UpcomingMovies = () => {
   const [categorizedMovies, setCategorizedMovies] = useState([])
   useEffect(() => {
     async function getMovies() {
-      const response = await fetch(baseUrl + "upcoming?api_key=");
+      const response = await fetch(baseUrl + "upcoming?api_key=c7ddc6c029fc8a1063dfe0c2fd18de75");
       if (!response.ok) throw Error(response.message);
       const data = await response.json();
       setMovies(data.results);
@@ -24,7 +24,7 @@ const UpcomingMovies = () => {
   }, []);
   useEffect(() => {
     async function getGenres() {
-      const response = await fetch("/");
+      const response = await fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=c7ddc6c029fc8a1063dfe0c2fd18de75&language=en-US&page=1");
       if (!response.ok) throw Error(response.message);
       const data = await response.json();
       setAllGenres(data.genres);
